@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest  # Use Windows runner instead of Ubuntu
+    runs-on: windows-latest  # Use Windows runner
 
     steps:
       - name: Checkout code
@@ -24,6 +24,14 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Install flake8
+        run: |
+          pip install flake8  # Install flake8 for linting
+
+      - name: Run flake8 linting
+        run: |
+          flake8 .  # Lint the entire repository using flake8
 
       - name: Run tests with pytest
         run: |
