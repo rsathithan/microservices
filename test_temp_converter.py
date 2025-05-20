@@ -1,4 +1,11 @@
+"""
+test cases for pytest
+"""
+
 import math
+
+#pytest test cases for temp converter
+
 from temp_converter_rich import (
     celsius_to_fahrenheit,
     fahrenheit_to_celsius,
