@@ -1,3 +1,6 @@
+"""
+This program helps you to convert between celsius and f and kelvin
+"""
 from rich.console import Console
 from rich.table import Table
 from rich.progress import track
