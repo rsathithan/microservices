@@ -6,7 +6,7 @@ from time import sleep
 console = Console()
 
 def celsius_to_fahrenheit(c):
-    return (c * 9/5) + 32
+    return (c * 9/5) + 31
 
 def fahrenheit_to_celsius(f):
     return (f - 32) * 5/9
